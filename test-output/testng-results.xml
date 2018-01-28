@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="6" total="7" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Automation test suite" duration-ms="1509" started-at="2018-01-28T17:08:48Z" finished-at="2018-01-28T17:08:49Z">
+    <groups>
+    </groups>
+    <test name="chromeWindowsLocal" duration-ms="1509" started-at="2018-01-28T17:08:48Z" finished-at="2018-01-28T17:08:49Z">
+      <class name="com.automation.scripts.Home">
+        <test-method status="PASS" signature="bvtVerifyHeaderMenuList(java.util.Hashtable)[pri:0, instance:com.automation.scripts.Home@18eed359]" name="bvtVerifyHeaderMenuList" duration-ms="1411" started-at="2018-01-28T22:38:48Z" data-provider="getTestDataFor_bvtVerifyHeaderMenuList" finished-at="2018-01-28T22:38:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{RunMode=Y, Title=FredMeyerJeweler, Header=FredMeyer}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bvtVerifyHeaderMenuList -->
+      </class> <!-- com.automation.scripts.Home -->
+      <class name="com.automation.scripts.Register">
+        <test-method status="PASS" signature="beforeSuite(org.testng.ITestContext, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automation.scripts.Register@520a3426]" name="beforeSuite" is-config="true" duration-ms="18085" started-at="2018-01-28T22:38:30Z" finished-at="2018-01-28T22:38:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@165b8a71]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Sequential]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Regression]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[selenium]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Latest Version]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[local]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[windows 10]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.automation.scripts.Register@520a3426]" name="closeBrowser" is-config="true" duration-ms="1659" started-at="2018-01-28T22:38:49Z" finished-at="2018-01-28T22:38:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.automation.scripts.Register -->
+    </test> <!-- chromeWindowsLocal -->
+  </suite> <!-- Automation test suite -->
+</testng-results>

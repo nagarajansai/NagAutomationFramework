@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE suite SYSTEM 'http://testng.org/testng-1.0.dtd'>
+<suite name='Automation test suite' parallel='tests' thread-count='3'
+	preserve-order='true'>
+	<parameter name='suiteExecuted' value='Regression' />
+	<parameter name='executionType' value='Sequential' />
+	<parameter name="browser" value="chrome"></parameter>
+	<parameter name="automationName" value="selenium"></parameter>
+	<parameter name="browserVersion" value="Latest Version"></parameter>
+	<parameter name="platformName" value="windows 10"></parameter>
+	<parameter name="environment" value="local"></parameter>
+	<!-- <listeners> <listener class-name="org.uncommons.reportng.HTMLReporter" 
+		/> <listener class-name="org.uncommons.reportng.JUnitXMLReporter" /> <listener 
+		class-name="com.automation.utilities.AssignTestPriorityTransformer" /> </listeners> -->
+	<test name="chromeWindowsLocal" preserve-order='true'>
+		<classes>
+			<class name="com.automation.scripts.Register">
+				<methods>
+					<parameter name="userrole" value="HospiceAdminUser"></parameter>
+					<exclude name="bvtVerifyNewUser" /> <!-- METHOD EXCLUDED HERE -->
+				</methods>
+			</class>
+			<class name="com.automation.scripts.Login">
+				<methods>
+					<parameter name="userrole" value="HospiceAdminUser"></parameter>
+					<exclude name="bvtVerifyLoginErrorMessage" /> <!-- METHOD EXCLUDED HERE -->
+				</methods>
+			</class>
+				<class name="com.automation.scripts.Home">
+				<methods>
+					<parameter name="userrole" value="HospiceAdminUser"></parameter>
+					<include name="bvtVerifyHeaderMenuList" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [Automation test suite]" parallel="tests">
+  <parameter name="environment" value="local"/>
+  <parameter name="suiteExecuted" value="Regression"/>
+  <parameter name="executionType" value="Sequential"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="Latest Version"/>
+  <parameter name="automationName" value="selenium"/>
+  <parameter name="platformName" value="windows 10"/>
+  <test name="chromeWindowsLocal(failed)" parallel="tests">
+    <classes>
+      <class name="com.automation.scripts.Home">
+        <parameter name="userrole" value="HospiceAdminUser"/>
+        <methods>
+          <include name="bvtVerifyHeaderMenuList" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.automation.scripts.Home -->
+      <class name="com.automation.scripts.Register">
+        <parameter name="userrole" value="HospiceAdminUser"/>
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.automation.scripts.Register -->
+    </classes>
+  </test> <!-- chromeWindowsLocal(failed) -->
+</suite> <!-- Failed suite [Automation test suite] -->
